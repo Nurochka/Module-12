@@ -1,0 +1,17 @@
+{
+  "name": "module12-webservices",
+  "version": "1.0.0",
+  "description": "web-services",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --config ./test/config/mocha.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.0.1"
+  }
+}
