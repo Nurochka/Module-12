@@ -2,3 +2,6 @@
 npm init
 
 npm test
+
+//to run tests in parallel using mocha-parallel-tests package
+npm testParallel
