@@ -9,7 +9,8 @@ describe('Validate GET response', function(){
         response = await axios.get('https://jsonplaceholder.typicode.com/users');
     });
 
-    it('should validate that status code of the obtained response is 200 OK', function(){
-        expect(response.status+' '+ response.statusText).to.eql('200 OK');        
-    });    
+    it('should validate that the content of the response body is the array of 10 users', function(){
+        const size = Object.keys(response.data).length;     
+        expect(size).to.eql(10);        
+    });
 });
